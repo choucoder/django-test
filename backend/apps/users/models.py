@@ -37,6 +37,5 @@ class User(AbstractUser):
         return "{id}, {email}, {username}, {user_type}".format(
             id=self.id,
             email=self.email,
-            username=self.username,
-            user_type=self.get_user_type_display()
+            username=self.username
         )
